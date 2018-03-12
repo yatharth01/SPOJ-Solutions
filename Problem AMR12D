@@ -1,0 +1,25 @@
+    #include<iostream>
+    using namespace std;
+    int main(){
+    	int t,k,x,l;
+    	string s;
+    	cin>>t;
+    	for(int i=0;i<t;i++)
+    	{  x=0;
+    		cin>>s;
+    	    l=s.size();
+    	    
+    		for(int j=0,k=l-1;j<(l/2),k>=(l/2);k--,j++)
+    		{  //cout<<j<<k<<endl;
+    			if(s[j]!=s[k])
+    			{
+    				x=1;
+    				break;
+    			}
+    		}
+    		if(x==1)
+    		cout<<"NO"<<endl;
+    		else cout<<"YES"<<endl;
+    	}
+    } 
+
